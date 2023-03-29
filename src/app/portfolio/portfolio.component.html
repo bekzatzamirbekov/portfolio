@@ -1,0 +1,11 @@
+<div class="portfolio-container">
+  <h1>My Portfolio</h1>
+  <div class="card-container">
+    <div *ngFor="let item of items" class="card">
+      <img [src]="item.image" alt="portfolio item">
+      <h2>{{ item.title }}</h2>
+      <p>{{ item.description }}</p>
+      <a [href]="item.link" target="_blank">{{ item.link }}</a>
+    </div>
+  </div>
+</div>
